@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<title>Tower Defense</title>
+	<meta name="description" content="Tower Defense">
+	<meta name="author" content="Martin Bartolomé & Thomas Curiger">
+	<link rel="stylesheet" href="css/Main.css">
+</head>
+<body>
+<main>
+	<div id="div_Lobby">
+		<form class="form-horizontal" action="#" id="form-signin" method="post">
+			<h1>Neues Spiel</h1>
+			<div class="formcontainer">
+				<hr/>
+				<div class="container">
+					<label for="input-playername"><strong>Benutzername</strong></label>
+					<input type="text" class="form-control" id="input-playername" name="playername" placeholder="Benutzername Eingeben" required>
+				</div>
+				<button type="submit" class="btn btn-primary" id="btn-signin" value="send">Login</button>
+			</div>
+		</form>
+	</div>
+	<div id="div_Game" class="d-none">
+		<div id="chat">
+			<div id="chatEntries"></div>
+				<input class="form-control" name="chattext" type="text" id="input-chat" size="63" />
+				<input name="submitmsg" type="submit"  id="btn-chat" value="Send" />
+		</div>
+        <input type="button" id="entryButton" />
+	</div>
+</main>
+
+<script src="scripts/jquery-2.1.3.min.js"></script>
+<script src="scripts/Communication/Message.js"></script>
+<script src="scripts/Communication/Enumerations.js"></script>
+<script src="scripts/Communication/StartGame.js"></script>
+<script src="scripts/Communication/ChatLogEntry.js"></script>
+<script src="scripts/game.js"></script>
+</body>
+</html>
